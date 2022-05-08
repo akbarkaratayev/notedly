@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useQuery, gql } from '@apollo/client';
 import NoteFeed from '../components/NoteFeed';
 // Импортируем запрос
-import { GET_MY_FAVORITES } from '../qql/query';
+import { GET_MY_FAVORITES } from '../gql/query';
 const Favorites = () => {
   useEffect(() => {
     document.title = 'Favorites — Notedly';

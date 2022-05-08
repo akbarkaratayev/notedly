@@ -2,8 +2,8 @@ import React from 'react';
 import { useQuery, useMutation, gql } from '@apollo/client';
 import Note from '../components/Note';
 import NoteForm from '../components/NoteForm';
-import { GET_NOTE, GET_ME } from '../qql/query';
-import { EDIT_NOTE } from '../qql/mutation';
+import { GET_NOTE, GET_ME } from '../gql/query';
+import { EDIT_NOTE } from '../gql/mutation';
 import { Redirect } from 'react-router-dom';
 
 const EditNote = props => {

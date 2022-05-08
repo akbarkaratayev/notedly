@@ -4,7 +4,7 @@ import logo from '../img/logo.svg';
 import { useQuery, gql, useMutation } from '@apollo/client';
 import { Link, withRouter } from 'react-router-dom';
 import ButtonAsLink from './ButtonAsLink';
-import { IS_LOGGED_IN } from '../qql/query';
+import { IS_LOGGED_IN } from '../gql/query';
 
 const HeaderBar = styled.header`
   width: 100%;
