@@ -11,6 +11,13 @@ const { markdownToTxt } = require('markdown-to-txt');
 const StyledNote = styled.article`
   max-width: 800px;
   margin: 0 auto;
+  overflow: scroll;
+
+  ${ReactMarkdown} {
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 const PlainTextWrapper = styled.p`
