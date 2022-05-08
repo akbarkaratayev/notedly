@@ -37,7 +37,10 @@ const Note = ({ note }) => {
   const { loading, error, data } = useQuery(IS_LOGGED_IN);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error! {error.message}</p>;
-  let plain = markdownToTxt(note.content).substring(0, 70) + '...';
+  let plain =
+    markdownToTxt(note.content).length <= 70
+      ? markdownToTxt(note.content)
+      : markdownToTxt(note.content).substring(0, 70) + '...';
   return (
     <StyledNote>
       <MetaData>
